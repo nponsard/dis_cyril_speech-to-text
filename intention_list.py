@@ -14,6 +14,6 @@ texts = [
 def get_phrases():
     print("Loading phrases...")
     phrases = []
-    for index, text_list in enumerate(texts):
+    for text_list in texts:
         phrases.append(Phrase(text_list))
     return phrases
