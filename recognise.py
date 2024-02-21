@@ -6,14 +6,15 @@ from transcribe import transcribe
 
 def recognise_action_text(text, training_data: TrainingData, treshold=0.93):
     knn = training_data.knn
-    texts = training_data.texts
     indexes = training_data.indexes
     target_embedding = get_embedding(text)
     index, similarity = find_neighbor(knn, target_embedding, indexes)
-    print(f"index: {index}, matched phrase: {texts[index]}, similarity: {similarity}")
+    print(
+        f"index: {index}, matched phrase: {training_data.phrases[index].text_list[0]}, similarity: {similarity}"
+    )
 
     if similarity > treshold:
-        return indexes[index]
+        return index
     else:
         return None
 
