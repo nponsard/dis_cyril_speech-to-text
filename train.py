@@ -14,7 +14,7 @@ class TrainingData:
 def load_training():
     with open("model.pkl", "rb") as file:
         data = pickle.load(file)
-        return data.knn, data.texts, data.indexes, data.phrases
+        return data
 
 
 def save_training():

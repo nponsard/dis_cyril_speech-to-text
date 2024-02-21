@@ -19,4 +19,6 @@ def recognise_action_text(text, training_data: TrainingData, treshold=0.93):
 
 
 def recognise_action_voice(file, training_data: TrainingData, treshold=0.93):
-    return recognise_action_text(transcribe(file), training_data, treshold)
+    transcribed = transcribe(file)
+    print(f"Transcribed: {transcribed}")
+    return recognise_action_text(transcribed, training_data, treshold)
