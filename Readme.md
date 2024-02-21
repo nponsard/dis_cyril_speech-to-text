@@ -13,6 +13,19 @@
 
 
 
+## Train
 
+Configure phrases in intention_list.py
+
+```sh
+python train.py
+```
+
+
+## Run
+
+```sh
+python main.py
+```
 
 

@@ -17,7 +17,7 @@ def train_knn(phrases):
             X.append(embedding.numpy().squeeze())
             y.append(index)
             texts.append(phrase.text_list[index_e])
-            indexes.append(index)
+            indexes.append(phrase.id)
 
     # Convert to numpy arrays
     X = np.array(X)

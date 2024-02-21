@@ -10,7 +10,7 @@ def recognise_action_text(text, training_data: TrainingData, treshold=0.93):
     target_embedding = get_embedding(text)
     index, similarity = find_neighbor(knn, target_embedding, indexes)
     print(
-        f"index: {index}, matched phrase: {training_data.phrases[index].text_list[0]}, similarity: {similarity}"
+        f"index: {index}, similarity: {similarity}"
     )
 
     if similarity > treshold:

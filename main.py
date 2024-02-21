@@ -17,14 +17,14 @@ training_data = load_training()
 
 file = "recorded.wav"
 
-responses = [
-    "Okay, j'allume la lumière",
-    "Okay, j'allume le mixeur",
-    "Je n'a pas accès à la météo pour le moment",
-    "Okay, je lance la musique",
-    "Okay, j'éteins la lumière",
-    "Okay, j'éteins le mixeur",
-]
+responses = {
+    "ligth_on": "Okay, j'allume la lumière",
+    "mixer_on": "Okay, j'allume le mixeur",
+    "weather": "Je n'a pas accès à la météo pour le moment",
+    "music": "Okay, je lance la musique",
+    "light_off": "Okay, j'éteins la lumière",
+    "mixer_off": "Okay, j'éteins le mixeur",
+}
 
 not_understood = "Désolé, je n'ai pas compris"
 
