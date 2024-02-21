@@ -16,7 +16,7 @@ NUM_PADDING_CHUNKS = int(PADDING_DURATION_MS / CHUNK_DURATION_MS)
 NUM_WINDOW_CHUNKS = int(240 / CHUNK_DURATION_MS)
 
 # Initialize VAD
-vad = webrtcvad.Vad(3)  # set aggressiveness from 0 to 3
+vad = webrtcvad.Vad(1)  # set aggressiveness from 0 to 3
 
 
 # Function to check if a chunk contains speech

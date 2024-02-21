@@ -6,7 +6,7 @@ texts = [
     ["Active le mixeur", "Allume le mixeur"],
     ["Quel temps fait-il", "Dis-moi la météo"],
     ["Joue de la musique", "Commence la musique"],
-    ["Éteins la lumière", "Désactive les lumières", "lumière éteinte"],
+    ["Éteint la lumière", "Désactive les lumières", "lumière éteinte", "éteins la lumière"],
     ["Désactive le mixeur", "Éteins le mixeur"],
 ]
 

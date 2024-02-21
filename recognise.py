@@ -1,7 +1,7 @@
 from embedding import get_embedding
 from intent import find_neighbor
 from train import TrainingData
-from transcribe import transcribe
+from transcribe_wav2vec import transcribe
 
 
 def recognise_action_text(text, training_data: TrainingData, treshold=0.93):

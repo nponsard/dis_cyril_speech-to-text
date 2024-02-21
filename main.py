@@ -6,7 +6,6 @@ from intent import find_neighbor
 from recognise import recognise_action_voice
 from record_voice import record_voice
 from train import load_training
-from transcribe import transcribe
 from train import TrainingData
 from tts import say
 
