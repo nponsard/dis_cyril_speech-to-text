@@ -32,7 +32,8 @@ responses = {
 }
 
 ids = {
-    "bonjour" : "eb963dd2-1c81-4c82-8e2d-239c613dee96"
+    "ferie": "4efc6cf9-4980-40e0-9575-c0c1e3c096ca",
+    "blague": "955338e2-ef69-479d-bdd6-5c0567398fd1",
 }
 
 not_understood = "Désolé, je n'ai pas compris"
@@ -45,7 +46,12 @@ while True:
     action = recognise_action_voice(file, training_data, treshold)
     text = not_understood
     if action is not None:
-        text = requests.post(grobuzin_url+"/function/"+ids[action]+"/run").json()["message"]
+        print("Action found: " + action)
+        req = requests.post(grobuzin_url + "/function/" + ids[action] + "/run")
+        print(req.text)
+        text = req.json()[
+            "message"
+        ]
     print(text)
     say(text)
     sleep(1)

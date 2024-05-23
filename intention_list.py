@@ -2,7 +2,8 @@ from phrase import Phrase
 
 
 texts = {
-    "bonjour": ["Bonjour", "Salut", "Hello", "Hi"],
+    "ferie": ["Quand est le prochain jour férié ?", "Quand est le prochain jour de congé ?", "Férié", "Jour férié", "Jour de congé"],
+    "blague": ["Raconte moi une blague", "Dis moi une blague", "Blague"],
 }
 
 
